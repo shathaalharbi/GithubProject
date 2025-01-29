@@ -25,6 +25,7 @@ public class LoginPages {
     public void clickOnSignUpBtn(){
         WebElement SignUpBtn = driver.findElement(signUp);
         SignUpBtn.click();
+
     }
 
     public void clickOnTermsOfService(){
