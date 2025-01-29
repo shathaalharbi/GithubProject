@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import static ObjectPath.GithubPaths.*;
+import static ObjectPath.LoginPaths.*;
 
 
 public class LoginPages {
@@ -22,19 +23,19 @@ public class LoginPages {
         SignInBtn.click();
     }
 
-    public void clickOnSignUpBtn(){
-        WebElement SignUpBtn = driver.findElement(signUp);
-        SignUpBtn.click();
 
+    public void fillEmail(){
+        WebElement Email = driver.findElement(email);
+        Email.sendKeys("shatha3456alharbi@gmail.com");
     }
 
-    public void clickOnTermsOfService(){
-        WebElement TermsOfServiceLink = driver.findElement(TermsOfService);
-        TermsOfServiceLink.click();
+    public void fillPassword(){
+        WebElement Email = driver.findElement(password);
+        Email.sendKeys("SHa2001121");
     }
 
-    public void clickOnPrivacyStatement(){
-        WebElement PrivacyStatementLink = driver.findElement(PrivacyStatement);
-        PrivacyStatementLink.click();
+    public void ClickOnLogin(){
+        WebElement login = driver.findElement(signInBtn);
+        login.click();
     }
 }
